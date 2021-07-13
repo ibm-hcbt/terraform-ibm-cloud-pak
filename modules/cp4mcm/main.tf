@@ -1,9 +1,7 @@
 locals {
   cs_catalogsource_content = templatefile("${path.module}/templates/CS_CatalogSource.yaml.tmpl", {
-    openshift_version_number = local.openshift_version_number
   })
   mgt_catalogsource_content = templatefile("${path.module}/templates/MGT_CatalogSource.yaml.tmpl", {
-    openshift_version_number = local.openshift_version_number
   })
   installation_content = templatefile("${path.module}/templates/Installation.yaml.tmpl", {
     namespace                    = local.mcm_namespace,

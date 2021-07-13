@@ -23,10 +23,6 @@ variable "cluster_name_id" {
 //   description = "Kubernetes configuration parameters such as host, certificates or token to access your cluster"
 // }
 
-variable "openshift_version" {
-  description = "Openshift version installed in the cluster"
-}
-
 variable "on_vpc" {
   description = "Cluster type. VPC: on_vpc=true, Classic: on_vpc=false"
 }
